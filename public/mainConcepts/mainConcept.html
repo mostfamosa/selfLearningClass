@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Concepts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../videoPage/videoPage.html">3D Video</a>
+        <a href="../mainConcepts/mainConcept.html">מושגיים עיקריים</a>
+        <a href="#contact">שעתוק</a>
+    </div>
+    <div class="container">
+        <h1>מושגיים עיקריים</h1>
+        <h3>מופיע לפניכם כרטיסיות שמתארות הגדרות למושגים עיקריים ויש ללחוץ על כל כרטיס כדי להפוך אותה למושג המקביל לו בתכנות</h3>
+        <div class="card-container">
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>קוד גנטי<br>(DNA)</h3><br>
+                        <span>החומר הגנטי שנמצא בתאים, שמכיל את המידע הדרוש להתרבות, התפתחות ותפקוד של אורגניזמים
+                            חיים.</span>
+                    </div>
+                    <div class="card-back">
+                        <h3>קוד מקור<br>(Source Code)</h3><br>
+                        <span>קוד מקור הוא כמו ה-DNA הוא מכיל את כל המידע וההוראות שצריך כדי שהמערכת (התוכנה) תוכל
+                            לפעול. כמו שה-DNA הוא התוכנית הגנטית של אורגניזמים, קוד המקור הוא התוכנית הכתובה בשפת תכנות
+                            שאפשר לקרוא ולהבין.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>שעתוק<br>(Transcription)</h3><br>
+                        <span>תהליך שבו המידע הגנטי שב-DNA מומר לרנ"א (RNA), כדי שהמידע יוכל לשמש בייצור חלבונים.</span>
+                    </div>
+                    <div class="card-back">
+                        <h3>קומפילציה<br>(Compilation)</h3><br>
+                        <span>קומפילציה היא כמו שעתוק, תהליך שבו קוד המקור (DNA) מומר לקוד ביניים (mRNA). בתהליך הזה
+                            מתורגמות ההוראות לשפה שתאפשר למערכת להתקדם לשלב הבא, אך הן עדיין לא בפורמט הסופי
+                            להפעלה.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>mRNA<br></h3><br><br>
+                        <span>סוג של רנ"א שמעביר את המידע הגנטי מ-DNA לצורך יצירת חלבונים בתא.</span>
+                    </div>
+                    <div class="card-back">
+                        <h3>קוד ביניים<br></h3><br><br>
+                        <span>קוד ביניים הוא כמו ה-mRNA הוא הגרסה המעובדת של המידע, שבאה להעביר את ההוראות לפלטפורמה
+                            שתבצע אותן. קוד זה עדיין לא "רץ", אבל הוא קרוב לשלב הביצוע הסופי.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>תרגום<br>(Translation)</h3><br>
+                        <span>תהליך שבו המידע שב-mRNA מומר לחלבונים בתא.</span>
+                    </div>
+                    <div class="card-back">
+                        <h3>הרצה<br></h3><br><br>
+                        <span>הרצה היא כמו תרגום התהליך שבו קוד ביניים (mRNA) מתורגם לשפת מכונה (או חלבונים, במקרה של
+                            התא). המערכת קוראת את הקוד הזה ומבצעת את ההוראות בצורה מוחשית.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Protien<br>(חלבון)</h3><br>
+                        <span>מולקולה ביולוגית גדולה שמורכבת משרשרות של חומצות אמינו. החלבונים מבצעים תפקידים חיוניים
+                            בגוף, כמו בניית תאים, עזרה בתהליכים כימיים והובלת חומרים.</span>
+                    </div>
+                    <div class="card-back">
+                        <h3>פלט<br>(Output)</h3><br>
+                        <span>פלט התוכנית הוא כמו החלבון זהו התוצר הסופי של כל התהליך, שבו המידע המקורי מקבל צורה
+                            פונקציונלית ומבצע משימות. בדיוק כמו שחלבון מבצע תפקידים חיוניים בגוף, פלט התוכנית הוא מה
+                            שהתוכנה נועדה להפיק או לבצע.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="controlPage">
+            <button id="next" onclick="goToVideo()">Next Page</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 DNA Learning</p>
+        <p>Mostafa Mosa & Wissal Khoury</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

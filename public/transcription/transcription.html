@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>השוואה בין שעתוק לקומפילציה</title>
+</head>
+
+<body>
+    <h1>תהליך השעתוק והקומפילציה</h1>
+    <div class="container">
+        <div class="section">
+            <h2>תהליך השעתוק (Transcription)</h2>
+            <p>
+                <strong>מה זה?</strong>
+                תהליך ביולוגי שבו מולקולת ה-DNA משמשת כתבנית ליצירת מולקולת RNA שליח (mRNA), אשר נושאת את המידע ליצירת
+                חלבונים.
+            </p>
+
+            <h3>תווים שמרכיבים את ה-DNA וה-mRNA:</h3>
+            <p>ה-DNA וה-mRNA מורכבים מתווים (בסיסים חנקניים), אך יש הבדל קטן בין ה-DNA ל-mRNA:</p>
+            <ul>
+                <li><strong>A</strong> (אדנין) - קיים ב-DNA וגם ב-mRNA.</li>
+                <li><strong>T</strong> (תימין) - קיים רק ב-DNA.</li>
+                <li><strong>U</strong> (אורציל) - מופיע רק ב-mRNA.</li>
+                <li><strong>G</strong> (גואנין) - קיים ב-DNA וגם ב-mRNA.</li>
+                <li><strong>C</strong> (ציטוזין) - קיים ב-DNA וגם ב-mRNA.</li>
+            </ul>
+
+
+            <h3>התאמה בין התווים:</h3>
+            <p>במהלך תהליך השעתוק, נוצרת התאמה בין התווים של ה-DNA ל-mRNA באופן הבא:</p>
+            <ul>
+                <li><strong>A</strong> ב-DNA מתאים ל-<strong>U</strong> ב-mRNA.</li>
+                <li><strong>T</strong> ב-DNA מתאים ל-<strong>A</strong> ב-mRNA.</li>
+                <li><strong>G</strong> ב-DNA מתאים ל-<strong>C</strong> ב-mRNA.</li>
+                <li><strong>C</strong> ב-DNA מתאים ל-<strong>G</strong> ב-mRNA.</li>
+            </ul>
+            <h3>דוגמה:</h3>
+            <p>להלן דוגמה לתהליך השעתוק:</p>
+            <pre>
+        DNA:  TACGGCAT
+        mRNA: AUGCCGUA
+            </pre>
+        </div>
+
+
+        <div class="section">
+            <h2>תהליך הקומפילציה (תכנות)</h2>
+            <p><strong>מה זה?</strong> תהליך שבו קוד מקור (Source Code) מתורגם לקוד מכונה (Machine Code) שהמחשב יכול
+                להבין ולהריץ.</p>
+            <p><strong>מה מתקבל?</strong> קובץ הרצה (Executable File), כמו `.exe` או `.class`, שמאפשר למחשב לבצע את
+                התוכנית.</p>
+            <p><strong>איך זה קורה?</strong></p>
+            <ul>
+                <li>הקומפיילר בודק את הקוד לאיתור שגיאות סינטקטיות ולוגיות.</li>
+                <li>הקומפיילר מתרגם את הקוד לפורמט בינארי או ל-Bytecode.</li>
+                <li>נוצר קובץ הרצה (Executable) שמאפשר להריץ את התוכנית.</li>
+            </ul>
+            <p><strong>דוגמה:</strong></p>
+            <h4>קוד מקור (Java):</h4>
+            <pre>
+        public class HelloWorld {
+            public static void main(String[] args) {
+                System.out.println("Hello, World!");
+            }
+        }
+            </pre>
+            <h4>אחרי קומפילציה (Bytecode):</h4>
+            <pre>
+        0: getstatic     #2 // Field java/lang/System.out:Ljava/io/PrintStream;
+        3: ldc           #3 // String Hello, World!
+        5: invokevirtual #4 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        8: return
+            </pre>
+            <h4>קובץ הרצה שנוצר:</h4>
+            <p>ב-Java, הקובץ שנוצר יהיה `<strong>HelloWorld.class</strong>`, אותו ניתן להריץ בעזרת
+                <code>java HelloWorld</code>.</p>
+        </div>
+    </div>
+    <div class="container2">
+        <h2>פעילות חווייתית: שעתוק בפעולה!</h2>
+        <p>
+            יש על השולחן 3 מיכלים שכתוב עליהם "שעתוק" וקוביה. הנה ההנחיות:
+        </p>
+        <ol>
+            <li>זרוק את הקוביה.</li>
+            <li>לפי המספר שיצא בקוביה, בחר שאלה מהמיכל המתאים:
+                <ul>
+                    <li><strong>1-2:</strong> מיכל 1</li>
+                    <li><strong>3-4:</strong> מיכל 2</li>
+                    <li><strong>5-6:</strong> מיכל 3</li>
+                </ul>
+            </li>
+            <li>קרא את השאלה שבחרת. היא תכיל רצף DNA.</li>
+            <li>בצע את תהליך השעתוק על פי מה שלמדת:
+                <ul>
+                    <li>הזן את רצף ה-DNA בקלט הראשון.</li>
+                    <li>תרגם את רצף ה-DNA לרצף ה-mRNA לפי הכללים.</li>
+                    <li>מלא את רצף ה-mRNA בקלט השני.</li>
+                </ul>
+            </li>
+        </ol>
+        <div>
+            <h3>תרגול שעתוק</h3>
+            <p>הזן את רצף ה- DNA וגם רצף ה- mRNA ולחץ על "לבדוק" כדי לראות אם תהליך השעתוק בוצע נכון.</p>
+            <form>
+                <input  required="required" pattern="[A-Za-z]{2,20}" id="dnaInput" placeholder="תכניס רצף ה- DNA כאן:"><br>
+                <input  required="required" pattern="[A-Za-z]{2,20}" id="mrnaInput" placeholder="תכניס את הרצף שקיבלת אחרי השעתוק כאן:">
+                <button type="button" id="check" onclick="submitAnswers()">לבדוק</button>    
+            </form>
+            <p id="result" style="font-weight: bold; margin-top: 10px;"></p>
+        </div>
+    </div>
+    <button id="next" onclick="goToTranslation()">Next Page</button>
+    <footer>
+        <p>&copy; 2024 DNA Learning</p>
+        <p>Mostafa Mosa & Wissal Khoury</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

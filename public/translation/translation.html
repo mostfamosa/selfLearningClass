@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>תהליך תרגום והרצה</title>
+</head>
+
+<body>
+    <h1>תהליך תרגום והרצה</h1>
+    <div class="container">
+
+        <!-- תהליך התרגום (ביולוגיה) -->
+        <div class="section">
+            <h2>תהליך התרגום (Translation)</h2>
+            <p>
+                <strong>מה זה?</strong>
+                תהליך שבו ה-mRNA משמש כתבנית ליצירת חלבון. כל 3 בסיסים (קודון) ב-mRNA מתורגמים לחומצת אמינו.
+            </p>
+
+            <h3>שלבים בתהליך:</h3>
+            <ul>
+                <li>הריבוזום קורא את ה-mRNA.</li>
+                <li>הריבוזום מחבר את חומצות האמינו ליצירת חלבון.</li>
+            </ul>
+
+            <h3>הסבר על קודון התחלה וסיום:</h3>
+            <p>
+                <strong>קודון התחלה:</strong> הקודון הראשון ב-mRNA שמסמן את תחילת התרגום הוא <strong>AUG</strong>,
+                המקודד לחומצת האמינו מטיונין (Met).<br>
+                <strong>קודון סיום:</strong> הקודונים <strong>UAA</strong>, <strong>UAG</strong>, <strong>UGA</strong>
+                מסמנים את סוף התרגום ואינם מקודדים לחומצות אמינו.
+            </p>
+            <h3>דוגמה:</h3>
+            <p style="font-size:small;"><strong>(התרגום מתחיל מקודון AUG ונעצר בקודון UAA)</strong></p>
+            <pre>
+    mRNA: GCU AUG CCG UAC UAA
+    Protein: Met - Pro - Tyr
+            </pre>
+
+            <p><strong>זכרו:</strong> כל 3 בסיסים = חומצת אמינו אחת!</p>
+        </div>
+
+
+        <!-- תהליך ההרצה (תכנות) -->
+        <div class="section">
+            <h2>תהליך ההרצה (Execution)</h2>
+            <p>
+                <strong>מה זה?</strong>
+                תהליך שבו קובץ הרצה (Executable) שמתקבל אחרי הקומפילציה מופעל, והמחשב מבצע את ההוראות שבקובץ.
+            </p>
+
+            <h3>שלבים בהרצה:</h3>
+            <ul>
+                <li>המחשב טוען את קובץ ההרצה לזיכרון.</li>
+                <li>המעבד מבצע את ההוראות בקובץ לפי סדר.</li>
+                <li>התוצאה מוצגת למשתמש או מתבצעת פעולה מסוימת.</li>
+            </ul>
+
+            <h3>דוגמה להרצה:</h3>
+            <p>תהליך של הרצת תוכנית:</p>
+            <h4>קוד מקור:</h4>
+            <pre>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+            </pre>
+            <h4>קובץ הרצה:</h4>
+            <p>לאחר הקומפילציה, קובץ בשם <strong>HelloWorld.class</strong> נוצר. כדי להריץ את התוכנית:</p>
+            <pre>
+> java HelloWorld
+Output: Hello, World!
+            </pre>
+        </div>
+    </div>
+    <div class="container2">
+        <h2>שאלות תרגול לתרגום עם קוביה ומיכלים</h2>
+        <p>
+            על השולחן יש שלושה מיכלים שכתוב עליהם "תרגום". בכל מיכל יש שאלות שונות. זרוק קוביה אמיתית ובחר שאלה בהתאם
+            למספר שהתקבל:
+        </p>
+        <ul>
+            <li><strong>1-2:</strong> קח שאלה מהמיכל הראשון.</li>
+            <li><strong>3-4:</strong> קח שאלה מהמיכל השני.</li>
+            <li><strong>5-6:</strong> קח שאלה מהמיכל השלישי.</li>
+        </ul>
+
+
+
+        <p>לאחר שלקחת שאלה מהמיכל, הזן את רצף ה-mRNA שקיבלת ותוצאה אפשרית של תרגום כאן:</p>
+
+        <!-- אזורי קלט לתשובות -->
+        <div>
+            <input id="rnaInput" placeholder="הכנס את רצף ה-mRNA כאן, למשל: AUG CCG GCU">
+            <input id="proteinInput" placeholder="הכנס את רצף חומצות האמינו שקיבלת (חלבון), למשל: Met - Pro - Tyr">
+            <button type="button" onclick="checkTranslation()">בדוק את התשובה</button>
+        </div>
+        <p id="resultMessage" class="result"></p>
+    </div>
+    <button id="next" onclick="goToSummary()">Next Page</button>
+    <footer>
+        <p>&copy; 2024 DNA Learning</p>
+        <p>Mostafa Mosa & Wissal Khoury</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../videoPage/videoPage.html">3D Video</a>
+        <a href="../mainConcepts/mainConcept.html">מושגיים עיקריים</a>
+        <a href="#contact">שעתוק</a>
+      </div>
+    <div class="container">
+        <h1>צפו בסרטון וענו על השאלות</h1>
+        <div class="video-wrapper">
+            <iframe width="100%" height="80%" src="https://www.youtube.com/embed/gG7uCskUOrA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <form id="questionForm" dir="rtl">
+            <label style="font-weight: 500; font-size: larger;">תבחרו תשובה אחת מתוך הארבע תשובות:</label>
+        
+            <!-- Question 1 -->
+            <div class="question">
+                <label>1. מה זב שמופיע בתמונה?</label>
+                <img src="../pics/dna.png">
+                <div>
+                    <input type="radio" id="option1" name="question1" value="Option 1" required>
+                    <label for="option1">לגו</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question1" value="Option 2">
+                    <label for="option2">חומצת אמינו</label>
+                </div>
+                <div>
+                    <input type="radio" id="option3" name="question1" value="Option 3">
+                    <label for="option3">בסיס</label>
+                </div>
+                <div>
+                    <input type="radio" id="option4" name="question1" value="Option 4" class="answer">
+                    <label for="option4">DNA</label>
+                </div>
+            </div>
+        
+            <!-- Question 2 -->
+            <div class="question">
+                <label>2. מה זב שמופיע בתמונה?</label>
+                <img src="../pics/aminoAcid.png">
+                <div>
+                    <input type="radio" id="option1" name="question2" value="Option 1" required>
+                    <label for="option1">בסיס</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question2" value="Option 2" class="answer">
+                    <label for="option2">חומצת אמינו</label>
+                </div>
+                <div>
+                    <input type="radio" id="option3" name="question2" value="Option 3">
+                    <label for="option3">mRNA (Messenger RNA)</label>
+                </div>
+                <div>
+                    <input type="radio" id="option4" name="question2" value="Option 4">
+                    <label for="option4">מים</label>
+                </div>
+            </div>
+        
+            <!-- Question 3 -->
+            <div class="question">
+                <label>3. מה זב שמופיע בתמונה?</label>
+                <img src="../pics/mrna.png">
+                <div>
+                    <input type="radio" id="option1" name="question3" value="Option 1" class="answer" required>
+                    <label for="option1">mRNA (Messenger RNA)</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question3" value="Option 2">
+                    <label for="option2">DNA</label>
+                </div>
+                <div>
+                    <input type="radio" id="option3" name="question3" value="Option 3">
+                    <label for="option3">תולעת</label>
+                </div>
+                <div>
+                    <input type="radio" id="option4" name="question3" value="Option 4">
+                    <label for="option4">חלבון</label>
+                </div>
+            </div>
+        
+            <!-- Question 4 -->
+            <div class="question">
+                <label>4. מה זב שמופיע בתמונה?</label>
+                <img src="../pics/protien.png">
+                <div>
+                    <input type="radio" id="option1" name="question4" value="Option 1" class="answer" required>
+                    <label for="option1">חלבון</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question4" value="Option 2">
+                    <label for="option2">חתיכת לחם</label>
+                </div>
+                <div>
+                    <input type="radio" id="option3" name="question4" value="Option 3">
+                    <label for="option3">חומצת אמינו</label>
+                </div>
+                <div>
+                    <input type="radio" id="option4" name="question4" value="Option 4">
+                    <label for="option4">תא</label>
+                </div>
+            </div>
+        
+            <button type="button" id="check" onclick="submitAnswers()">לבדוק</button>
+            <div id="feedback"></div>
+        </form>
+        
+        <button type="button" id="next" onclick="goToTranscription()">Next Page</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 DNA Learning</p>
+        <p>Mostafa Mosa & Wissal Khoury</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
