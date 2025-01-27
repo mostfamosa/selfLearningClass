@@ -22,7 +22,7 @@ function goToScoreBoard(){
     console.log(updatedScoreboard);
     updatedScoreboard.push({name: localStorage.getItem("studentName"), score: localStorage.getItem("studentScore"), time: diff });
     localStorage.setItem("scoreboard",JSON.stringify(updatedScoreboard));
-    window.location.href ='../scoreboard/scoreboard.html';
+    window.location.href ='../../index.html';
 }
 
 document.addEventListener("DOMContentLoaded", () => {

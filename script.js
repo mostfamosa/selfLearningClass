@@ -72,5 +72,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function goToMainConcepts() {
-    window.location.href = '../mainConcepts/mainConcept.html';
+    window.location.href = 'public/mainConcepts/mainConcept.html';
 }
