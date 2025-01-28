@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video and Questions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="navbar">
-        <a href="../videoPage/videoPage.html">3D Video</a>
         <a href="../mainConcepts/mainConcept.html">מושגיים עיקריים</a>
-        <a href="#contact">שעתוק</a>
-      </div>
+        <a href="../transcription/transcription.html">שעתוק</a>
+        <a href="../translation/translation.html">תרגום</a>
+        <a href="../finalPage/summary.html">סיכום והשוואה</a>
+    </div>
     <div class="container">
         <h1>צפו בסרטון וענו על השאלות</h1>
         <div class="video-wrapper">
-            <iframe width="100%" height="80%" src="https://www.youtube.com/embed/gG7uCskUOrA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="80%" src="https://www.youtube.com/embed/gG7uCskUOrA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
         <form id="questionForm" dir="rtl">
             <label style="font-weight: 500; font-size: larger;">תבחרו תשובה אחת מתוך הארבע תשובות:</label>
-        
+
             <!-- Question 1 -->
             <div class="question">
                 <label>1. מה זב שמופיע בתמונה?</label>
@@ -41,7 +46,7 @@
                     <label for="option4">DNA</label>
                 </div>
             </div>
-        
+
             <!-- Question 2 -->
             <div class="question">
                 <label>2. מה זב שמופיע בתמונה?</label>
@@ -63,7 +68,7 @@
                     <label for="option4">מים</label>
                 </div>
             </div>
-        
+
             <!-- Question 3 -->
             <div class="question">
                 <label>3. מה זב שמופיע בתמונה?</label>
@@ -85,7 +90,7 @@
                     <label for="option4">חלבון</label>
                 </div>
             </div>
-        
+
             <!-- Question 4 -->
             <div class="question">
                 <label>4. מה זב שמופיע בתמונה?</label>
@@ -107,11 +112,11 @@
                     <label for="option4">תא</label>
                 </div>
             </div>
-        
+
             <button type="button" id="check" onclick="submitAnswers()">לבדוק</button>
             <div id="feedback"></div>
         </form>
-        
+
         <button type="button" id="next" onclick="goToTranscription()">Next Page</button>
     </div>
     <footer>
@@ -120,4 +125,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

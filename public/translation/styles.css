@@ -9,7 +9,7 @@
 /* Body */
 body {
     margin-top: 50px;
-    background: linear-gradient(135deg, #60ebf0, #ffffff);
+    background: linear-gradient(135deg, #e99856, #17d8f1);
     color: #333;
     padding: 20px;
 }
@@ -115,11 +115,16 @@ button:hover {
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    left:0;
-    width: 100%; /* Full width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 500px;
     z-index: 500;
+    display: flex;
+    justify-content: center;
+    justify-self: anchor-center;
+    border-radius: 15px;
+    margin: 5px;
   }
   
   /* Links inside the navbar */

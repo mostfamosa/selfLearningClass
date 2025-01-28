@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="../mainConcepts/mainConcept.html">מושגיים עיקריים</a>
+        <a href="../transcription/transcription.html">שעתוק</a>
+        <a href="../translation/translation.html">תרגום</a>
+        <a href="../finalPage/summary.html">סיכום והשוואה</a>
+    </div>
     <h1>תהליך השעתוק והקומפילציה</h1>
     <div class="container">
         <div class="section">
@@ -107,8 +113,8 @@
             <h3>תרגול שעתוק</h3>
             <p>הזן את רצף ה- DNA וגם רצף ה- mRNA ולחץ על "לבדוק" כדי לראות אם תהליך השעתוק בוצע נכון.</p>
             <form>
-                <input  required="required" pattern="[A-Za-z]{2,20}" id="dnaInput" placeholder="תכניס רצף ה- DNA כאן:"><br>
-                <input  required="required" pattern="[A-Za-z]{2,20}" id="mrnaInput" placeholder="תכניס את הרצף שקיבלת אחרי השעתוק כאן:">
+                <input  required="required" pattern="[A-Za-z]{2,20}" id="dnaInput" placeholder="תכניס רצף ה- DNA כאן, למשל: TACG"><br>
+                <input  required="required" pattern="[A-Za-z]{2,20}" id="mrnaInput" placeholder="תכניס את הרצף שקיבלת אחרי השעתוק כאן, למשל: AUGC">
                 <button type="button" id="check" onclick="submitAnswers()">לבדוק</button>    
             </form>
             <p id="result" style="font-weight: bold; margin-top: 10px;"></p>

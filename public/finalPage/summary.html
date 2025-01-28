@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>סיכום והשוואה</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<div class="navbar">
+    <a href="../mainConcepts/mainConcept.html">מושגיים עיקריים</a>
+    <a href="../transcription/transcription.html">שעתוק</a>
+    <a href="../translation/translation.html">תרגום</a>
+    <a href="../finalPage/summary.html">סיכום והשוואה</a>
+</div>
 <h1>השוואה בין תהליכים בביולוגיה ובתכנות</h1>
 
 <body>
     <div class="container">
         <h3>
-            השוואה בין מושגים מתחומים שונים, כמו ביולוגיה ותכנות, מאפשרת הבנה מעמיקה ויצירתית של נושאים מורכבים. 
-            השוואות אלו מחדדות את ההבנה שלנו על הקשרים שבין תהליכים ותפקידים שונים, ועוזרות להמחיש את הרעיון בצורה מוחשית וברורה יותר.
+            השוואה בין מושגים מתחומים שונים, כמו ביולוגיה ותכנות, מאפשרת הבנה מעמיקה ויצירתית של נושאים מורכבים.
+            השוואות אלו מחדדות את ההבנה שלנו על הקשרים שבין תהליכים ותפקידים שונים, ועוזרות להמחיש את הרעיון בצורה
+            מוחשית וברורה יותר.
         </h3>
         <br>
         <h3>נסו למלא את הטבלה הבאה:</h3>
         <h4>
-             כעת, נסה להשלים את הטבלה על ידי גרירה של המושגים מעולם התכנות והצמדתם למושגים המקבילים בביולוגיה.(בונוס 10 נק')
+            כעת, נסה להשלים את הטבלה על ידי גרירה של המושגים מעולם התכנות והצמדתם למושגים המקבילים בביולוגיה.(בונוס 10
+            נק')
         </h4>
-    
 
-    <!-- טבלה לגרירה ושחרור -->
-    <div class="drag-drop-container">
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th>ביולוגיה</th>
-                    <th>תכנות</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>DNA</td>
-                    <td class="drop-zone" data-match="קוד מקור"></td>
-                </tr>
-                <tr>
-                    <td>שעתוק</td>
-                    <td class="drop-zone" data-match="קומפילציה"></td>
-                </tr>
-                <tr>
-                    <td>mRNA</td>
-                    <td class="drop-zone" data-match="קוד ביניים"></td>
-                </tr>
-                <tr>
-                    <td>תרגום</td>
-                    <td class="drop-zone" data-match="הרצה"></td>
-                </tr>
-                <tr>
-                    <td>חלבון</td>
-                    <td class="drop-zone" data-match="פלט התכנית"></td>
-                </tr>
-            </tbody>
-        </table>
 
-        <!-- רשימת המונחים לגרירה -->
-        <div class="drag-terms">          
-            <span class="drag-item" draggable="true" data-term="פלט התכנית">פלט התכנית</span>
-            <span class="drag-item" draggable="true" data-term="קוד ביניים">קוד ביניים</span>
-            <span class="drag-item" draggable="true" data-term="קוד מקור">קוד מקור</span>
-            <span class="drag-item" draggable="true" data-term="הרצה">הרצה</span>
-            <span class="drag-item" draggable="true" data-term="קומפילציה">קומפילציה</span>
+        <!-- טבלה לגרירה ושחרור -->
+        <div class="drag-drop-container">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>ביולוגיה</th>
+                        <th>תכנות</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DNA</td>
+                        <td class="drop-zone" data-match="קוד מקור"></td>
+                    </tr>
+                    <tr>
+                        <td>שעתוק</td>
+                        <td class="drop-zone" data-match="קומפילציה"></td>
+                    </tr>
+                    <tr>
+                        <td>mRNA</td>
+                        <td class="drop-zone" data-match="קוד ביניים"></td>
+                    </tr>
+                    <tr>
+                        <td>תרגום</td>
+                        <td class="drop-zone" data-match="הרצה"></td>
+                    </tr>
+                    <tr>
+                        <td>חלבון</td>
+                        <td class="drop-zone" data-match="פלט התכנית"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- רשימת המונחים לגרירה -->
+            <div class="drag-terms">
+                <span class="drag-item" draggable="true" data-term="פלט התכנית">פלט התכנית</span>
+                <span class="drag-item" draggable="true" data-term="קוד ביניים">קוד ביניים</span>
+                <span class="drag-item" draggable="true" data-term="קוד מקור">קוד מקור</span>
+                <span class="drag-item" draggable="true" data-term="הרצה">הרצה</span>
+                <span class="drag-item" draggable="true" data-term="קומפילציה">קומפילציה</span>
+            </div>
         </div>
     </div>
-</div>
     <div id="feedback"></div>
     <button id="next" onclick="goToScoreBoard()">Finish</button>
 
     <script src="script.js"></script>
 </body>
+
 </html>
